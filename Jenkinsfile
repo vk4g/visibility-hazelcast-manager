@@ -38,7 +38,7 @@ timestamps {
             deployment = deployments.create(
                 name: 'Visibility Confluent Registry',
                 version: env.VERSION,
-                description: 'Confluent Reistry deployment for Kubernetes',
+                description: 'Hazelcast deployment for Kubernetes',
                 dockerImageName: dockerImageName,
                 dockerImageTag: env.VERSION,
                 yamlFile: 'K8sfile.yaml',   // optional, defaults to 'K8sfile.yaml'
@@ -67,7 +67,7 @@ timestamps {
             otbpDeployment = deployments.create(
                 name: 'Visibility Confluent Registry',
                 version: env.VERSION,
-                description: 'Confluent Reistry deployment for Kubernetes',
+                description: 'hazelcast deployment for Kubernetes',
                 dockerImageName: otbpDockerImageName,
                 dockerImageTag: env.VERSION,
                 yamlFile: 'K8sfile.yaml',   // optional, defaults to 'K8sfile.yaml'
