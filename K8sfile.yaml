@@ -58,4 +58,3 @@ spec:
   selector:
     app: visibility-hazelcast-manager
   type: NodePort
-
