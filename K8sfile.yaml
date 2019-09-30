@@ -51,7 +51,7 @@ spec:
             failureThreshold: 3
             httpGet:
               path: /visibility-hazelcast-manager
-              port: 9443
+              port: 8080
               scheme: HTTP
             periodSeconds: 5
             initialDelaySeconds: 30
