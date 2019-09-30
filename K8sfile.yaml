@@ -32,12 +32,34 @@ spec:
           livenessProbe:
             failureThreshold: 3
             httpGet:
-              path: /
+              path: /visibility-hazelcast-manager
               port: http
             initialDelaySeconds: 60
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 5
+          ports:
+            - containerPort: 8080
+              name: app-http
+            - containerPort: 8080
+              name: admin-http
+            - containerPort: 8080
+              name: app-https
+            - containerPort: 8080
+              name: admin-https
+          imagePullPolicy: Always
+          # readinessProbe defines when the pod is made available to load
+          # balancer
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /visibility-hazelcast-manager
+              port: 9443
+              scheme: HTTP
+            periodSeconds: 5
+            initialDelaySeconds: 30
+            successThreshold: 1
+            timeoutSeconds: 10
           resources:
             limits:
               cpu: "1"
