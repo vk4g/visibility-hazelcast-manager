@@ -24,9 +24,6 @@ spec:
       containers:
         - name: visibility-hazelcast-manager
           image: hazelcast/management-center:3.12.5
-          ports:
-            - name: http
-              containerPort: 8080
           #    key: REGISTRY_CONNECTION_URL
           #    value: "http://visibility-confluent-registry:8081"
           livenessProbe:
