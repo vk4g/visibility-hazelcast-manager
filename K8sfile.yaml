@@ -27,7 +27,7 @@ spec:
           livenessProbe:
             failureThreshold: 3
             httpGet:
-              path: /visibility-hazelcast-manager/hazelcast-mancenter
+              path: /
               port: http
             initialDelaySeconds: 60
             periodSeconds: 10
@@ -48,7 +48,7 @@ spec:
           readinessProbe:
             failureThreshold: 3
             httpGet:
-              path: /visibility-hazelcast-manager/hazelcast-mancenter
+              path: /
               port: 8080
               scheme: HTTP
             periodSeconds: 5
@@ -74,4 +74,5 @@ spec:
       targetPort: 8080
   selector:
     app: visibility-hazelcast-manager
+  type: NodePort
 
