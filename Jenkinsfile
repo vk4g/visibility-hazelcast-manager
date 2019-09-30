@@ -36,7 +36,7 @@ timestamps {
         stage('Build Docker image (AT4D) ') {
 
             deployment = deployments.create(
-                name: 'Visibility Confluent Registry',
+                name: 'Hazelcast deployment',
                 version: env.VERSION,
                 description: 'Hazelcast deployment for Kubernetes',
                 dockerImageName: dockerImageName,
@@ -65,7 +65,7 @@ timestamps {
             unstash name: 'workspace'
             
             otbpDeployment = deployments.create(
-                name: 'Visibility Confluent Registry',
+                name: 'Hazelcast deployment',
                 version: env.VERSION,
                 description: 'hazelcast deployment for Kubernetes',
                 dockerImageName: otbpDockerImageName,
