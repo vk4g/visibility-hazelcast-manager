@@ -56,11 +56,11 @@ kind: Service
 metadata:
   name: visibility-hazelcast-manager
 spec:
-  ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: 8080
-  selector:
-    app: visibility-hazelcast-manager
   type: NodePort
+  ports:
+    - name: external
+      port: 8080
+      nodePort: 32668
+  selector:
+    statefulset.kubernetes.io/pod-name: visibility-hazelcast-manager
 
