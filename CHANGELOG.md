@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.16] - 2019-09-30
+
+- Added ingress
+
 ## [0.0.15] - 2019-09-30
 
 - Added ingress
