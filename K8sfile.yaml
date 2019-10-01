@@ -7,7 +7,7 @@ metadata:
     app: visibility-hazelcast-manager
 spec:
   minReadySeconds: 5
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: visibility-hazelcast-manager
-          image: hazelcast/management-center:3.12.5
+          image: hazelcast/management-center:3.12.4
           livenessProbe:
             failureThreshold: 3
             httpGet:
