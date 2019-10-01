@@ -44,16 +44,6 @@ spec:
           imagePullPolicy: Always
           # readinessProbe defines when the pod is made available to load
           # balancer
-          readinessProbe:
-            failureThreshold: 3
-            httpGet:
-              path: /
-              port: 8080
-              scheme: HTTP
-            periodSeconds: 5
-            initialDelaySeconds: 30
-            successThreshold: 1
-            timeoutSeconds: 10
           resources:
             limits:
               cpu: "1"
