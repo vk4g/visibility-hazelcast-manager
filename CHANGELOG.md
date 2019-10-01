@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.20] - 2019-10-01
+
+- force build
+
+
 ## [0.0.19] - 2019-10-01
 
 - Added Readyness probe
