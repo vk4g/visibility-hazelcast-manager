@@ -30,10 +30,10 @@ spec:
               path: /
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 60
+            initialDelaySeconds: 600
             periodSeconds: 10
             successThreshold: 1
-            timeoutSeconds: 5
+            timeoutSeconds: 60
           ports:
             - containerPort: 8080
               name: internal
