@@ -3,4 +3,4 @@
  EXPOSE 8080
  
  # Start Management Center
-CMD ["bash", "/start.sh"]
+CMD ["bash", "/opt/hazelcast/mancenter/start.sh"]
