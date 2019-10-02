@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.24] - 2019-10-01
+
+- update prob endpoint
+
 ## [0.0.23] - 2019-10-01
 
 - force build
