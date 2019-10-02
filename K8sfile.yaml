@@ -27,13 +27,13 @@ spec:
           livenessProbe:
             failureThreshold: 3
             httpGet:
-              path: /
+              path: /hazelcast-mancenter
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 600
+            initialDelaySeconds: 60
             periodSeconds: 10
             successThreshold: 1
-            timeoutSeconds: 60
+            timeoutSeconds: 10
           ports:
             - containerPort: 8080
               name: internal
